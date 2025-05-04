@@ -80,9 +80,9 @@ public class Bank{
     protected ArrayList addCardToBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             cartoesEmitidos.add(card);
-            System.out.println("O cartao foi adicionado com sucesso!");
+            System.out.println("O cartao foi adicionado com sucesso!\n");
         }else{
-            System.out.println("O cartao nao foi adicionado");
+            System.out.println("O cartao nao foi adicionado\n");
         }
         return cartoesEmitidos;
     }
@@ -90,9 +90,9 @@ public class Bank{
     protected ArrayList removeCardFromBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             cartoesEmitidos.remove(card);
-            System.out.println("O cartao foi removido com sucesso!");
+            System.out.println("O cartao foi removido com sucesso!\n");
         }else{
-            System.out.println("O cartao nao foi removido");
+            System.out.println("O cartao nao foi removido\n");
         }
         return cartoesEmitidos;
     }
@@ -109,9 +109,9 @@ public class Bank{
     protected ArrayList addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             contasCriadas.add(account);
-            System.out.println("A conta criada com sucesso!");
+            System.out.println("A conta criada com sucesso!\n");
         }else{
-            System.out.println("A conta nao foi criada");
+            System.out.println("A conta nao foi criada\n");
         }
         return contasCriadas;
     }
@@ -119,9 +119,9 @@ public class Bank{
     protected ArrayList removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             contasCriadas.remove(account);
-            System.out.println("A conta foi removida com sucesso!");
+            System.out.println("A conta foi removida com sucesso!\n");
         }else{
-            System.out.println("A conta nao foi removida");
+            System.out.println("A conta nao foi removida\n");
         }
         return contasCriadas;
     }
@@ -138,9 +138,9 @@ public class Bank{
     protected ArrayList addClientToBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             clientesAssociados.add(client);
-            System.out.println("A conta criada com sucesso!");
+            System.out.println("A conta criada com sucesso!\n");
         }else{
-            System.out.println("A conta nao foi criada");
+            System.out.println("A conta nao foi criada\n");
         }
         return clientesAssociados;
     }
@@ -148,9 +148,9 @@ public class Bank{
     protected ArrayList removeClientFromBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if(confirmKey == true){
             clientesAssociados.remove(client);
-            System.out.println("A conta foi removida com sucesso!");
+            System.out.println("A conta foi removida com sucesso!\n");
         }else{
-            System.out.println("A conta nao foi removida");
+            System.out.println("A conta nao foi removida\n");
         }
         return clientesAssociados;
     }
@@ -163,13 +163,25 @@ public class Bank{
     //------------------------------------------------------
 
     @SuppressWarnings("StringConcatenationInsideStringBufferAppend")//oculta os warnings de concatenacao de string
-    public String ShowCardsAndAccounts(){
+    public StringBuilder ShowCardsAndAccounts(){
         StringBuilder string = new StringBuilder();
 
         string.append("-Numero de Cartoes Totais: " +getNumberOfCardsFromBank() +"\n");
         string.append("-Numero de Contas Totais: " +getNumberOfAccountsFromBank() +"\n");
         string.append("-Numero de Clientes Totais: " +getNumberOfClientsFromBank() +"\n");
 
-        return ShowCardsAndAccounts();
+        return string;
+    }
+
+    @SuppressWarnings("StringConcatenationInsideStringBufferAppend")//oculta os warnings de concatenacao de string
+    public StringBuilder ShowBankInfo(){
+        StringBuilder string = new StringBuilder();
+
+        string.append("-Nome do Banco: " +getBankName() +"\n");
+        string.append("-Endereco do Banco: " +getBankAdress() +"\n");
+        string.append("-Data de Criacao: " +getCreationDate() +"\n");
+        string.append("-Codigo do Banco: " +getBankCode() +"\n");
+
+        return string;
     }
 }
