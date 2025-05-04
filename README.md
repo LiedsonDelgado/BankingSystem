@@ -9,7 +9,7 @@
       <img src="https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white"/>
 </h3>
 
-<h3>Contribuidores</h3>
+<h3>Autores</h3>
     <a href="https://github.com/LiedsonDelgado/BCV_Bank_and_ATM_Services/graphs/contributors">
         <img src="https://contrib.rocks/image?repo=LiedsonDelgado/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
     </a>
