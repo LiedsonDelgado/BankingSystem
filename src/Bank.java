@@ -75,35 +75,6 @@ public class Bank{
     public void setBankCode(int s_code){
         this.bankCode = s_code;
     }
-    //Methods to manipulate Accounts in the Bank
-    //------------------------------------------------------
-    protected ArrayList addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
-            contasCriadas.add(account);
-            System.out.println("A conta criada com sucesso!");
-        }else{
-            System.out.println("A conta nao foi criada");
-        }
-        return contasCriadas;
-    }
-
-    protected ArrayList removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
-            contasCriadas.remove(account);
-            System.out.println("A conta foi removida com sucesso!");
-        }else{
-            System.out.println("A conta nao foi removida");
-        }
-        return contasCriadas;
-    }
-
-    protected void showAddedAccounts(){
-        for(Account conta: contasCriadas){
-            System.out.println(conta.showAccountInfo(conta));
-        }
-    }
-    //------------------------------------------------------
-
     //Methods to manipulate Cards int the Bank
     //------------------------------------------------------
     protected ArrayList addCardToBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
@@ -129,6 +100,35 @@ public class Bank{
     protected void showAddedCards(){
         for(Card cards: cartoesEmitidos){
             System.out.println(cards.showCardInfo(cards));
+        }
+    }
+    //------------------------------------------------------
+
+    //Methods to manipulate Accounts in the Bank
+    //------------------------------------------------------
+    protected ArrayList addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+        if(confirmKey == true){
+            contasCriadas.add(account);
+            System.out.println("A conta criada com sucesso!");
+        }else{
+            System.out.println("A conta nao foi criada");
+        }
+        return contasCriadas;
+    }
+
+    protected ArrayList removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+        if(confirmKey == true){
+            contasCriadas.remove(account);
+            System.out.println("A conta foi removida com sucesso!");
+        }else{
+            System.out.println("A conta nao foi removida");
+        }
+        return contasCriadas;
+    }
+
+    protected void showAddedAccounts(){
+        for(Account conta: contasCriadas){
+            System.out.println(conta.showAccountInfo(conta));
         }
     }
     //------------------------------------------------------
@@ -161,6 +161,7 @@ public class Bank{
         }
     }
     //------------------------------------------------------
+
     @SuppressWarnings("StringConcatenationInsideStringBufferAppend")//oculta os warnings de concatenacao de string
     public String ShowCardsAndAccounts(){
         StringBuilder string = new StringBuilder();
