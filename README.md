@@ -10,11 +10,6 @@
 </h3>
 
 <h3>Contribuidores</h3>
-<h3>
-    <a href="https://github.com/LiedsonDelgado">
-      <img src="https://avatars.githubusercontent.com/LiedsonDelgado" width="60" border-radius="100%;" alt="Delgado's"/>
+    <a href="https://github.com/LiedsonDelgado/BCV_Bank_and_ATM_Services/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=LiedsonDelgado/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
     </a>
-    <a href="https://github.com/TiagoDongo">
-      <img src="https://avatars.githubusercontent.com/TiagoDongo" width="60px;" border-radius="100%;" alt="Dongo's"/>
-    </a>
-</h3>
