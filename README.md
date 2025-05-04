@@ -10,17 +10,10 @@
 </h3>
 
 <h3>Contribuidores</h3>
-
-<h3>Criador/Fundador do Projeto</h3>
-
 <h3>
     <a href="https://github.com/LiedsonDelgado">
       <img src="https://avatars.githubusercontent.com/LiedsonDelgado" width="60" style="border-radius: 100%" alt="Delgado's"/>
     </a>
-</h3>
-    
-<h3>Co-Fundador(es) do Projeto</h3>
-<h3>
     <a href="https://github.com/TiagoDongo">
       <img src="https://avatars.githubusercontent.com/TiagoDongo" width="60px;" style="border-radius: 100%" alt="Dongo's"/>
     </a>
