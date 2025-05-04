@@ -167,6 +167,7 @@ public class Bank{
 
         string.append("-Numero de Cartoes Totais: " +getNumberOfCardsFromBank() +"\n");
         string.append("-Numero de Contas Totais: " +getNumberOfAccountsFromBank() +"\n");
+        string.append("-Numero de Clientes Totais: " +getNumberOfClientsFromBank() +"\n");
 
         return ShowCardsAndAccounts();
     }
