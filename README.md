@@ -13,9 +13,9 @@
 
 #Criador/Fundador do Projeto
 <a href="https://github.com/LiedsonDelgado">
-  <img src="https://avatars.githubusercontent.com/LiedsonDelgado" width="70" style="border-radius: 100%" alt="Delgado's"/>
+  <img src="https://avatars.githubusercontent.com/LiedsonDelgado" width="60" style="border-radius: 100%" alt="Delgado's"/>
 </a>
 #Co-Fundador(es) do Projeto
 <a href="https://github.com/TiagoDongo">
-  <img src="https://avatars.githubusercontent.com/TiagoDongo" width="50px;" style="border-radius: 100%" alt="Dongo's"/>
+  <img src="https://avatars.githubusercontent.com/TiagoDongo" width="60px;" style="border-radius: 100%" alt="Dongo's"/>
 </a>
