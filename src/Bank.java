@@ -11,7 +11,7 @@ public class Bank{
     protected ArrayList<Account>contasCriadas;
     protected ArrayList<Client>clientesAssociados;
 
-    //Construtor Banco
+    //Bank Construtor
     public Bank(String p_date,String p_name,String p_bankAdress,int p_code){
         this.creationDate = p_date;
         this.name = p_name;
@@ -78,7 +78,7 @@ public class Bank{
     //Methods to manipulate Cards int the Bank
     //------------------------------------------------------
     protected ArrayList addCardToBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((card != null) && (confirmKey == true)){
             cartoesEmitidos.add(card);
             System.out.println("O cartao foi adicionado com sucesso!\n");
         }else{
@@ -88,7 +88,7 @@ public class Bank{
     }
 
     protected ArrayList removeCardFromBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((card != null) && (confirmKey == true)){
             cartoesEmitidos.remove(card);
             System.out.println("O cartao foi removido com sucesso!\n");
         }else{
@@ -107,7 +107,7 @@ public class Bank{
     //Methods to manipulate Accounts in the Bank
     //------------------------------------------------------
     protected ArrayList addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((account != null) && (confirmKey == true)){
             contasCriadas.add(account);
             System.out.println("A conta criada com sucesso!\n");
         }else{
@@ -117,7 +117,7 @@ public class Bank{
     }
 
     protected ArrayList removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((account != null) && (confirmKey == true)){
             contasCriadas.remove(account);
             System.out.println("A conta foi removida com sucesso!\n");
         }else{
@@ -136,7 +136,7 @@ public class Bank{
     //Method to manipulate Clients in the Bank
     //------------------------------------------------------
     protected ArrayList addClientToBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((client != null) && (confirmKey == true)){
             clientesAssociados.add(client);
             System.out.println("A conta criada com sucesso!\n");
         }else{
@@ -146,7 +146,7 @@ public class Bank{
     }
 
     protected ArrayList removeClientFromBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
-        if(confirmKey == true){
+        if((client != null) && (confirmKey == true)){
             clientesAssociados.remove(client);
             System.out.println("A conta foi removida com sucesso!\n");
         }else{
