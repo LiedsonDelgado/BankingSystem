@@ -1,5 +1,6 @@
 public class Main{
-    public static void main(String[] args) {
+    public static void main(String[] args){
+
         //Area de Testes!!!
         //---------------------------------------------------------------------
 
@@ -10,8 +11,15 @@ public class Main{
         System.out.println(a1.showAccountInfo(a1));
         System.out.println(a2.showAccountInfo(a2));
 
+        a1.moneyWithdrawal(a1,"1566");
+        System.out.println("-Saldo Disponivel: " +a1.getBalance() +"\n");
+
+        a1.moneyDeposit(a1,"466");
+        System.out.println("-Saldo Disponivel: " +a1.getBalance() +"\n");
+
         bcv.addAccountToBank(a1,true);
         bcv.addAccountToBank(a2,true);
+
         System.out.println(bcv.ShowBankInfo());
         System.out.println(bcv.ShowCardsAndAccounts());
 
