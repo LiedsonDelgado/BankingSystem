@@ -3,7 +3,8 @@ import java.math.*;
 
 public class Account{
     protected BigDecimal balance; //saldo do cartao representado pelo tipo BigDecimal que e mais apropriado para valores monetarios
-    protected int accId; //id da conta
+    private final int accId; //id da conta
+    private static int nextAccID = 1; //permite criar um id unico para cada cliente por default o primeiro obj contem id=1
     protected String accName; //Nome identificador da conta
     protected String accCode; //codigo da conta
 
@@ -12,8 +13,7 @@ public class Account{
         this.balance = new BigDecimal(p_balance);
         this.accName = p_accName;
         this.accCode = p_accCode;
-        this.accId = 1; /*fazer com que a cada objeto criado ele seja incrementado p.ex: obj1->ID:0001, obj2->ID:0002 *...
-                        ...*mas que por default o obj1 ja contem ID:0001*/
+        this.accId = nextAccID++;
     }
 
     //Methods
@@ -58,4 +58,31 @@ public class Account{
 
         return string;
     }
+
+    //Account Operations (que irao ser usadas pelo o ATM)
+    //------------------------------------------------------
+
+    public BigDecimal moneyWithdrawal(Account account,String p_value){ //operacao de levantamento
+        BigDecimal value = new BigDecimal(p_value);
+
+        if(this.balance.compareTo(value) >= 0){ //compara se o valor a ser levantado e menor que o saldo disponivel
+            this.balance = balance.subtract(value);
+            System.out.println("-Foi levantado a quantia de: " +value +" CVE");
+
+        }else{
+            System.out.println("-Nao e possivel realizar levantamento, saldo insuficiente!\n");
+        }
+
+        return this.balance;
+    }
+
+    public BigDecimal moneyDeposit(Account account,String p_value){ //operacao de deposito
+        BigDecimal value = new BigDecimal(p_value);
+        this.balance = balance.add(value);
+        System.out.println("-Foi depositado uma quantia de :" +value +" CVE");
+
+        return this.balance;
+    }
+
+    //------------------------------------------------------
 }
