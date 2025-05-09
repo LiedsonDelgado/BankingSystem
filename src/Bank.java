@@ -184,4 +184,21 @@ public class Bank{
 
         return string;
     }
+    //Methods for searching
+    //------------------------------------------------------
+    public String searchAccCode(String p_accCode){
+        String msg = "-Pesquisa terminada!\n";
+
+        for (Account conta : contasCriadas){
+            if(conta.getAccCode().equals(p_accCode)){
+                System.out.println("=>A conta encontrada foi:");
+                System.out.println("-----------------------------");
+                System.out.print(conta.showAccountInfo(conta));
+                System.out.println("-----------------------------");
+            }else{
+                System.out.println("=>A conta nao foi encontrada!");
+            }
+        }
+        return msg;
+    }
 }
