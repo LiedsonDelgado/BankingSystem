@@ -23,6 +23,9 @@ public class Main{
         System.out.println(bcv.ShowBankInfo());
         System.out.println(bcv.ShowCardsAndAccounts());
 
+        //teste da pesquisa de uma string no arraylist de contas pesquisando pelo codigo da conta
+        System.out.println(bcv.searchAccCode("bz98c746v5"));
+
         //---------------------------------------------------------------------
     }
 }
