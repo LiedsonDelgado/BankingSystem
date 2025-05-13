@@ -77,7 +77,7 @@ public class Bank{
     }
     //Methods to manipulate Cards int the Bank
     //------------------------------------------------------
-    protected ArrayList addCardToBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Card> addCardToBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((card != null) && (confirmKey == true)){
             cartoesEmitidos.add(card);
             System.out.println("O cartao foi adicionado com sucesso!\n");
@@ -87,7 +87,7 @@ public class Bank{
         return cartoesEmitidos;
     }
 
-    protected ArrayList removeCardFromBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Card> removeCardFromBank(Card card,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((card != null) && (confirmKey == true)){
             cartoesEmitidos.remove(card);
             System.out.println("O cartao foi removido com sucesso!\n");
@@ -97,7 +97,7 @@ public class Bank{
         return cartoesEmitidos;
     }
 
-    protected void showAddedCards(){
+    public void showAddedCards(){
         for(Card cards: cartoesEmitidos){
             System.out.println(cards.showCardInfo(cards));
         }
@@ -106,7 +106,7 @@ public class Bank{
 
     //Methods to manipulate Accounts in the Bank
     //------------------------------------------------------
-    protected ArrayList addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Account> addAccountToBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((account != null) && (confirmKey == true)){
             contasCriadas.add(account);
             System.out.println("A conta criada com sucesso!\n");
@@ -116,7 +116,7 @@ public class Bank{
         return contasCriadas;
     }
 
-    protected ArrayList removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Account> removeAccountFromBank(Account account,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((account != null) && (confirmKey == true)){
             contasCriadas.remove(account);
             System.out.println("A conta foi removida com sucesso!\n");
@@ -126,7 +126,7 @@ public class Bank{
         return contasCriadas;
     }
 
-    protected void showAddedAccounts(){
+    public void showAddedAccounts(){
         for(Account conta: contasCriadas){
             System.out.println(conta.showAccountInfo(conta));
         }
@@ -135,7 +135,7 @@ public class Bank{
 
     //Method to manipulate Clients in the Bank
     //------------------------------------------------------
-    protected ArrayList addClientToBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Client> addClientToBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((client != null) && (confirmKey == true)){
             clientesAssociados.add(client);
             System.out.println("A conta criada com sucesso!\n");
@@ -145,7 +145,7 @@ public class Bank{
         return clientesAssociados;
     }
 
-    protected ArrayList removeClientFromBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
+    public ArrayList<Client> removeClientFromBank(Client client,boolean confirmKey){ //recebe um boolean como chave de confirmacao(true=Sim e false=Nao)
         if((client != null) && (confirmKey == true)){
             clientesAssociados.remove(client);
             System.out.println("A conta foi removida com sucesso!\n");
@@ -155,7 +155,7 @@ public class Bank{
         return clientesAssociados;
     }
 
-    protected void showAddedClients(){
+    public void showAddedClients(){
         for(Client client: clientesAssociados){
             System.out.println(client.showClientInfo(client));
         }
@@ -186,11 +186,46 @@ public class Bank{
     }
     //Methods for searching
     //------------------------------------------------------
+    //Procura pelo ID da Conta
+    public String searchAccID(int p_accID){
+        String msg = "-Pesquisa terminada!\n";
+
+        for (Account conta : contasCriadas){
+            if(conta.getAccId() == (p_accID)){
+                System.out.println("=>A conta encontrada foi:");
+                System.out.println("-----------------------------");
+                System.out.print(conta.showAccountInfo(conta));
+                System.out.println("-----------------------------");
+            }else{
+                System.out.println("=>A conta nao foi encontrada!");
+            }
+        }
+        return msg;
+    }
+
+    //Procura pelo Codigo da Conta
     public String searchAccCode(String p_accCode){
         String msg = "-Pesquisa terminada!\n";
 
         for (Account conta : contasCriadas){
             if(conta.getAccCode().equals(p_accCode)){
+                System.out.println("=>A conta encontrada foi:");
+                System.out.println("-----------------------------");
+                System.out.print(conta.showAccountInfo(conta));
+                System.out.println("-----------------------------");
+            }else{
+                System.out.println("=>A conta nao foi encontrada!");
+            }
+        }
+        return msg;
+    }
+
+    //Procura pelo Nome da Conta
+    public String searchAccName(String p_accName){
+        String msg = "-Pesquisa terminada!\n";
+
+        for (Account conta : contasCriadas){
+            if(conta.getAccName().equals(p_accName)){
                 System.out.println("=>A conta encontrada foi:");
                 System.out.println("-----------------------------");
                 System.out.print(conta.showAccountInfo(conta));
