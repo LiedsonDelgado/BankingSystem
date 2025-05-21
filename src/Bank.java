@@ -236,4 +236,23 @@ public class Bank{
         }
         return msg;
     }
+
+    //Procura pelo Nome da Conta #2
+    //PS: funciona como uma barra de pesquisa para uma string
+    public String searchNameBar(String p_accName){
+        String msg = "-Pesquisa terminada!\n";
+
+        for(Account conta : contasCriadas){
+            if(conta.getAccName().contains(p_accName)){
+                System.out.println("=>A conta encontrada foi:");
+                System.out.println("-----------------------------");
+                System.out.print(conta.showAccountInfo(conta));
+                System.out.println("-----------------------------");
+            }else{
+                System.out.println("=>A conta nao foi encontrada!");
+            }
+        }
+
+        return msg;
+    }
 }
