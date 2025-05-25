@@ -88,7 +88,7 @@ public class Account{
     //------------------------------------------------------
 
     public void moneyWithdrawal(Account account,String p_value){ //operacao de levantamento
-        try{
+        try{ //o uso do try atende caso seja passado um valor invalido ex.: null,etc
             BigDecimal value = new BigDecimal(p_value);
 
             if(account.getStatus() == true){ //verifica se o estado for true
@@ -108,7 +108,7 @@ public class Account{
     }
 
     public void moneyDeposit(Account account,String p_value){ //operacao de deposito
-        try{ //o uso do try atende caso seja passado um valor invalido ex.: null
+        try{ //o uso do try atende caso seja passado um valor invalido ex.: null,etc
             BigDecimal value = new BigDecimal(p_value);
 
             if(account.getStatus() == true){ //verifica se o estado for true
