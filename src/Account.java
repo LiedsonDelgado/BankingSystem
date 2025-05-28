@@ -64,7 +64,7 @@ public class Account{
     }
 
     public void setBalance(BigDecimal s_balance,Account p_account){
-        if(p_account.getStatus() == true){
+        if(p_account.getStatus()){
             this.balance = s_balance;
         }else{
             System.out.println("Conta esta desativada!");
