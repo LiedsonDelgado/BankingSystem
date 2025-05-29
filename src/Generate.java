@@ -1,7 +1,0 @@
-//Classe para representar a interface de Generate que ira gerar ficheiros
-public interface Generate{
-    //Methods
-    public void generate(Account p_account,String p_filename,String p_filepath,Report p_report); //recebe nome do ficheiro relatorio e objeto relatorio(conteudo), gera e salva o ficheiro que foi gerado
-    public void deleteGeneratedFile(String p_filename,String p_filepath); //
-    public void searchFile(String p_filename,String p_filepath); //
-}
