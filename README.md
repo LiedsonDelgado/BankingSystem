@@ -1,6 +1,6 @@
-# 🏦BCV Bank & ATM Services🏧
+# 🏦Banking System🏧
 
-Repositório para o projeto do Banco e ATM da BCV Services
+Repositório para o projeto do Banco e ATM
 
 ![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
     
