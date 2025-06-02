@@ -1,8 +1,6 @@
 # 🏦Banking System🏧
 
 Repositório para o projeto do Banco e ATM
-
-![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
     
 ## 📋 Sobre o Projeto
 
@@ -11,6 +9,8 @@ Projeto simula operações bancárias e de ATM.
 ### Inclui:
 - Gerenciamento de contas, cartões de crédito e clientes
 - Geração de relatorios
+
+![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
 
 ## ⚙️Linguagens, IDE's & Ferramentas usadas🔧
 
