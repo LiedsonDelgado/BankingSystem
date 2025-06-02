@@ -22,5 +22,5 @@ Projeto simula operações bancárias e de ATM.
 ## Contribuidores
 
 <img src="https://contrib.rocks/image?repo=LiedsonDelgado/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
-<img src="https://contrib.rocks/image?repo=TiagoDongo/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
+
 
