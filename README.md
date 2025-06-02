@@ -12,7 +12,7 @@ Projeto simula operações bancárias e de ATM.
 - Gerenciamento de contas, cartões de crédito e clientes
 - Geração de relatorios
 
-## ⚙️Linguagens, Ferramentas & IDE's Usadas🔧
+## ⚙️Linguagens, IDE's & Ferramentas usadas🔧
 
 ![java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![intellij](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
