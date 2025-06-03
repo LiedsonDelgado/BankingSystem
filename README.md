@@ -1,8 +1,5 @@
 # 🏦Banking System🏧
 Repositório para o projeto de sistema bancário e atm.
-
-##
-![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
     
 ## 📋 Sobre o Projeto
 Projeto simula operações bancárias e um atm, feito utilizando como linguagem de programação o JAVA☕.
@@ -22,6 +19,9 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 
 ## 🔧Ferramentas usadas
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
+
+##
+![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
 
 ## Contribuidores
 <img src="https://contrib.rocks/image?repo=TiagoDongo/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
