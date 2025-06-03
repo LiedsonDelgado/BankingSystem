@@ -4,8 +4,9 @@ Repositório para o projeto de sistema bancário e atm
 ## 📋 Sobre o Projeto
 Projeto simula operações bancárias e um atm, feito utilizando como linguagem de programação o JAVA☕
 
-### Inclui:
+### 🗂️ Inclui:
 - Gerenciamento de contas, cartões de crédito e clientes
+- Permite a realização de diversas operacões no atm
 - Geração de relatorios
 
 ### 📦 Dependencias do Projeto:
