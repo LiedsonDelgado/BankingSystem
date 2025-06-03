@@ -1,15 +1,15 @@
 # 🏦Banking System🏧
-Repositório para o projeto de sistema bancário e atm.
+Repositório para o projeto de sistema bancário e atm
     
 ## 📋 Sobre o Projeto
-Projeto simula operações bancárias e um atm, feito utilizando como linguagem de programação o JAVA☕.
+Projeto simula operações bancárias e um atm, feito utilizando como linguagem de programação o JAVA☕
 
 ### Inclui:
 - Gerenciamento de contas, cartões de crédito e clientes
 - Geração de relatorios
 
 ### 📦 Dependencias do Projeto:
-- Precisa dos ficheiros .jar na library(lib)
+- Precisa dos ficheiros .jar na library(lib) para poder ser executado
 - Baixar o diretorio lib e adicionar como uma library na sua IDE(recomendo usar o IntelliJ)
 
 ## ⚙️Linguagens & IDE's usadas
