@@ -14,7 +14,7 @@ public class Bank{
 
     //Bank Construtor
     public Bank(String p_name,String p_bankAdress,int p_code){
-        this.creationDate = creationDate.now();
+        this.creationDate = LocalDate.now();
         this.name = p_name;
         this.bankAdress = p_bankAdress;
         this.bankCode = p_code;
@@ -59,14 +59,14 @@ public class Bank{
 
     //Setters
     public void setBankName(String s_name){
-        if(s_name == null || s_name == ""){
+        if(s_name == null || s_name.isEmpty()){
             throw new IllegalArgumentException("Erro: parametro vazio passado\n");
         }
         this.name = s_name;
     }
 
     public void setBankAdress(String s_adress){
-        if(s_adress == null || s_adress == ""){
+        if(s_adress == null || s_adress.isEmpty()){
             throw new IllegalArgumentException("Erro: parametro vazio passado\n");
         }
 
@@ -138,7 +138,7 @@ public class Bank{
             throw new IllegalArgumentException("Erro: parametro vazio passado!");
         }
 
-        if((account != null) && (confirmKey)){
+        if(confirmKey){
             contasCriadas.remove(account);
             System.out.println("A conta foi removida com sucesso!");
         }else{
@@ -244,7 +244,7 @@ public class Bank{
 
     //Procura a conta pelo codigo associado
     public String searchAccCode(String p_accCode){
-        if(p_accCode == null || p_accCode == ""){
+        if(p_accCode == null || p_accCode.isEmpty()){
             throw new IllegalArgumentException("Erro: parametro vazio passado!\n");
         }
 
@@ -261,7 +261,7 @@ public class Bank{
 
     //Procura a conta pelo banco a qual ela pertence
     public String searchAccInBank(String p_bankName){
-        if(p_bankName == null || p_bankName == ""){
+        if(p_bankName == null || p_bankName.isEmpty()){
             throw new IllegalArgumentException("Erro: parametro vazio passado");
         }
 
@@ -291,7 +291,7 @@ public class Bank{
 
     //Procura pelo Nome da Conta
     public String searchNameBar(String p_accName){ //faz a procura pelo nome funcionando como uma barra de pesquisa para uma String
-        if(p_accName == null || p_accName == ""){
+        if(p_accName == null || p_accName.isEmpty()){
             throw new IllegalArgumentException("Erro: parametro vazio passado");
         }
 
