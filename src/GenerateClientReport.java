@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class GenerateClientReport{
 
-    public void generateClientReport(Client p_client){
+    public void generateClientReport(Client p_client){//recebe o conteudo das variaveis de instancia do objeto cliente
         try{
             ObjectMapper mapper = new ObjectMapper();
             mapper.registerModule(new JavaTimeModule());
