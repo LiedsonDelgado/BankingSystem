@@ -291,7 +291,7 @@ public class Bank{
 
     //Procura pelo Nome da Conta
     public String searchNameBar(String p_accName){ //faz a procura pelo nome funcionando como uma barra de pesquisa para uma String
-        if(p_accName == null || p_accName == null){
+        if(p_accName == null || p_accName == ""){
             throw new IllegalArgumentException("Erro: parametro vazio passado");
         }
 
