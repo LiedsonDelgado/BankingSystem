@@ -6,7 +6,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import java.io.*;
 
 public class GenerateAccountReport{
-    public void generateAccountReport(Account p_account){//recebe o conteudo do report e concatena com a sua extensao
+    public void generateAccountReport(Account p_account){//recebe o conteudo das variaveis de instancia do objeto conta
         try{
             ObjectMapper mapper = new ObjectMapper();
             mapper.registerModule(new JavaTimeModule());
