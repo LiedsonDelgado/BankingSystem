@@ -6,7 +6,7 @@ import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import java.io.*;
 
  class GenerateCardReport {
-    public void generateCreditCardReport(CreditCard p_card){
+    public void generateCreditCardReport(CreditCard p_card){//recebe o conteudo das variaveis de instancia do objeto cartao
         try{
             ObjectMapper mapper = new ObjectMapper();
             mapper.registerModule(new JavaTimeModule());
