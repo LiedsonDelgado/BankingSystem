@@ -23,3 +23,6 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 
 ##
 ![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
+
+## Contribuidores
+<img src="https://contrib.rocks/image?repo=TiagoDongo/BCV_Bank_and_ATM_Services" alt="Contribuidores do repositório BCV_Bank_and_ATM_Services"/>
