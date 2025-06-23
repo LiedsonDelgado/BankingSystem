@@ -1,5 +1,4 @@
 //Classe que estabelece a conexao com a base de dados do Sistema
-
 import java.sql.*;
 
 public class DataBaseConnectivity {
