@@ -1,0 +1,26 @@
+{
+  "bornedYear" : "27-08-2005",
+  "clientAdress" : "26 Campim,Mindelo",
+  "clientPhoneNumber" : "+238 9572843",
+  "account" : {
+    "accName" : "Liedson Delgado",
+    "accCode" : "xz89b7647",
+    "creationDate" : [ 2025, 7, 9 ],
+    "balance" : 88.67,
+    "status" : true,
+    "accId" : 1,
+    "creditCard" : {
+      "cardId" : 1,
+      "code" : 7642,
+      "cardCode" : "1234-2345-7483-3441",
+      "bank" : "BCV Services",
+      "cardType" : "MASTERCARD",
+      "cardStatus" : true
+    },
+    "accBank" : "BCV Services"
+  },
+  "clientAge" : 19,
+  "clientId" : 1,
+  "clientName" : "Liedson Delgado",
+  "clientIDCard" : "136gb89cv"
+}
