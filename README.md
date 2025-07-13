@@ -16,7 +16,8 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 
 ### 💻📦 Terminal de forma automática
 - Você pode usar tanto o terminal do seu Sistema Operativo ou o do próprio IntelliJ
-- Importante ter o maven baixado e ter configurado as variáveis de ambiente em caso do Windows acesse o link [https://www.youtube.com/watch?v=WvihAA-OAZI] e no caso do Linux use:
+- No Windows será importante ter o maven baixado(baixe o diretório tools a versão em uso no projeto) e ter configurado as variáveis de ambiente, acesse o link [https://www.youtube.com/watch?v=WvihAA-OAZI] para tutorial de instalação e configuração do maven
+- No Linux use:
 ```bash
 # Linux
 sudo apt install maven
