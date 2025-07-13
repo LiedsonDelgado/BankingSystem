@@ -1,0 +1,17 @@
+{
+  "accName" : "Liedson Delgado",
+  "accCode" : "xz89b7647",
+  "creationDate" : [ 2025, 7, 13 ],
+  "balance" : 88.67,
+  "status" : true,
+  "accId" : 1,
+  "creditCard" : {
+    "cardId" : 1,
+    "code" : 7642,
+    "cardCode" : "1234-2345-7483-3441",
+    "bank" : "BCV Services",
+    "cardType" : "MASTERCARD",
+    "cardStatus" : true
+  },
+  "accBank" : "BCV Services"
+}
