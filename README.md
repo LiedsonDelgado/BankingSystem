@@ -6,12 +6,31 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 
 ### 🗂️ Inclui:
 - Gerenciamento de contas, cartões de crédito e clientes
-- Permite a realização de diversas operacões no atm
+- Permite a realização de diversas operações no atm
 - Geração de relatorios
 
-### 📦 Dependencias do Projeto:
+## 📦 Dependências do Projeto:
+### 🖱️📁 Baixar manualmente
 - Precisa dos ficheiros .jar na library(lib) para poder ser executado
 - Baixar o diretorio lib e adicionar como uma library na sua IDE(recomendo usar o IntelliJ)
+
+### 💻📦 Terminal de forma automática
+- Você pode usar tanto o terminal do seu Sistema Operativo ou o do próprio IntelliJ
+- Importante ter o Maven baixado e ter configurado as variáveis de ambiente no caso do Windows, no caso do Linux use:
+```bash
+# Linux
+sudo apt install maven
+```
+- Navegue até o diretório do projeto onde se encontra o ficheiro de dependências/configuração principal (pom.xml):
+```bash
+# Windows & Linux
+cd BankingSystem 
+```
+- Rode o maven para baixar as dependências:
+```bash
+# Windows & Linux
+mvn clean install
+```
 
 ## ⚙️Linguagens & IDE's usadas
 ![java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
