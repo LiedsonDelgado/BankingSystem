@@ -7,6 +7,7 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 ### 🗂️ Inclui:
 - Gerenciamento de contas, cartões de crédito e clientes
 - Permite a realização de diversas operações no atm
+- Conectividade a uma Base de Dados para armazenar todos os dados do sistema
 - Geração de relatorios
 
 ## 📦 Dependências do Projeto:
