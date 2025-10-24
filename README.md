@@ -8,12 +8,12 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 - Gerenciamento de contas, cartões de crédito e clientes
 - Permite a realização de diversas operações no atm
 - Conectividade a uma Base de Dados para armazenar todos os dados do sistema
-- Geração de relatorios
+- Geração de relatórios
 
 ## 📦 Dependências do Projeto:
 ### 🖱️📁 Baixar manualmente
-- Precisa dos ficheiros .jar na library(pelo diretorio lib) para poder ser executado
-- Baixar o diretorio lib e adicionar como uma library na sua IDE(recomendo usar o IntelliJ)
+- Precisa dos ficheiros .jar na library(pelo diretório lib) para poder ser executado
+- Baixar o diretório lib e adicionar como uma library na sua IDE(recomendo usar o IntelliJ)
 
 ### 💻📥 Terminal de forma automática
 - Você pode usar tanto o terminal do seu Sistema Operativo ou o do próprio IntelliJ
