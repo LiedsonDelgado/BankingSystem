@@ -12,7 +12,7 @@ Projeto simula operações bancárias e um atm, feito utilizando como linguagem 
 
 ## 📦 Dependências do Projeto:
 ### 🖱️📁 Baixar manualmente
-- Precisa dos ficheiros .jar na library(lib) para poder ser executado
+- Precisa dos ficheiros .jar na library(pelo diretorio lib) para poder ser executado
 - Baixar o diretorio lib e adicionar como uma library na sua IDE(recomendo usar o IntelliJ)
 
 ### 💻📥 Terminal de forma automática
