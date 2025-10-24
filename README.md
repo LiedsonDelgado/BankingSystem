@@ -43,4 +43,4 @@ mvn clean install
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 
 ##
-![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/school_projects-UTA?color=03fc84)
+![last_commit](https://img.shields.io/github/last-commit/LiedsonDelgado/BankingSystem?color=03fc84)
