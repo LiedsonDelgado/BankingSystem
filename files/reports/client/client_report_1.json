@@ -1,0 +1,27 @@
+{
+  "bornedYear" : "27-08-2005",
+  "clientAdress" : "31 Monte Sossego,Mindelo",
+  "clientPhoneNumber" : "+238 9572843",
+  "clientId" : 1,
+  "account" : {
+    "accName" : "Liedson Delgado",
+    "accCode" : "xz89b7647",
+    "creationDate" : [ 2025, 12, 24, 12, 6, 15, 715500600 ],
+    "balance" : 88.67,
+    "status" : true,
+    "accId" : 1,
+    "accBank" : "BCV Services",
+    "creditCard" : {
+      "cardId" : 1,
+      "code" : 7642,
+      "cardCode" : "1234-2345-7483-3441",
+      "bank" : "BCV Services",
+      "cardType" : "MASTERCARD",
+      "cardStatus" : true
+    }
+  },
+  "clientEmail" : "ldelgado@gmail.com",
+  "clientAge" : 20,
+  "clientIDCard" : "136gb89cv",
+  "clientName" : "Liedson Delgado"
+}
