@@ -129,19 +129,14 @@ public class Account{
             return false;
         }
 
-        BigDecimal amount = new BigDecimal(p_amount);
-        if(!(this.balance.compareTo(amount) >= 0) && !(amount.compareTo(BigDecimal.ZERO) > 0)){ //compara se o valor a ser levantado for menor ou igual ao saldo disponivel e maior que 0
-            System.out.println("Erro: saldo insuficiente para levantamento!\n");
-            return false;
-        }
-
-        if(!(amount.compareTo(BigDecimal.ZERO) > 0)){ //saldo a depositar for maior que 0
-            System.out.println("Erro: valor invalido para deposito!\n");
-            return false;
-        }
-
         if(!p_account.getStatus()){ //verifica se a conta se encontra ativa
             System.out.println("Erro: a conta se encontra inativa!\n");
+            return false;
+        }
+
+        BigDecimal amount = new BigDecimal(p_amount);
+        if(!(this.balance.compareTo(amount) >= 0) || !(amount.compareTo(BigDecimal.ZERO) > 0)){ //compara se o valor a ser levantado for menor ou igual ao saldo disponivel e maior que 0
+            System.out.println("Erro: saldo insuficiente para operacao!\n");
             return false;
         }
         return true;
@@ -151,9 +146,11 @@ public class Account{
     public void moneyWithdrawal(Account p_account,String p_amount){ //operacao de levantamento
         if(validateOperations(p_account,p_amount)){
             BigDecimal amount = new BigDecimal(p_amount);
-            this.balance = balance.subtract(amount);
+
+            this.balance = this.balance.subtract(amount);
+
             System.out.println("-Foi levantado a quantia de: " +amount +" CVE");
-            System.out.println("-Saldo atual: " +balance +" CVE\n");
+            System.out.println("-Saldo atual: " +this.balance +" CVE\n");
         }else{
             throw new InvalidOperationException("Erro: a operacao nao foi validada!\n");
         }
@@ -163,9 +160,11 @@ public class Account{
     public void moneyDeposit(Account p_account,String p_amount){ //operacao de deposito
         if(validateOperations(p_account,p_amount)){
             BigDecimal amount = new BigDecimal(p_amount);
-            this.balance = balance.add(amount);
+
+            this.balance = this.balance.add(amount);
+
             System.out.println("-Foi depositado uma quantia de: " +amount +" CVE");
-            System.out.println("-Saldo atual: " +balance +" CVE\n");
+            System.out.println("-Saldo atual: " +this.balance +" CVE\n");
         }else{
             throw new InvalidOperationException("Erro: a operacao nao foi validada!\n");
         }
